@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	$(".nav").hide();
+	//$(".nav").hide();
 	
 		$(function () {
 		$(window).scroll(function () {
@@ -16,9 +16,9 @@ $(document).ready(function() {
 				var refElement = $(currLink.attr("href"));
 				var top = refElement.position().top;
 				var bottom = refElement.position().top + refElement.height();
-				//console.log("top "+Math.round(top));
-				//console.log("bottom "+Math.round(bottom));
-				//console.log("scrollPos "+scrollPos);
+				console.log("top "+Math.round(top));
+				console.log("bottom "+Math.round(bottom));
+				console.log("scrollPos "+scrollPos);
 				if (Math.round(top) <= Math.round(scrollPos)+1 && Math.round(bottom) > Math.round(scrollPos)) {
 					//console.log("Entered");
 				$('.myNavbar a').removeClass("active");
@@ -47,16 +47,17 @@ $(".nav a,a[href='#profile']").on('click', function(event) {
       });
     } 
   });
-  
+  $(window).scroll(function() {
   $(".animate-up").each(function(){
 	    var pos = $(this).offset().top;
 
     var winTop = $(window).scrollTop();
-	console.log("wintop "+winTop);
-	console.log("pos "+pos);
-    if (pos > winTop + 800) {
+	//console.log("wintop "+winTop);
+	//console.log("pos "+pos);
+    if (pos < winTop + 700) {
       $(this).addClass("slide");
     }  
+  });
   });
   
 });

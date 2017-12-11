@@ -141,7 +141,7 @@ margin:0px;
     visibility: visible; 
 }
 
-@keyframes slide {
+@keyframes SLIDE {
     0% {
         opacity: 0;
         transform: translateY(70%);
