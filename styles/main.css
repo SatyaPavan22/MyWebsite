@@ -72,7 +72,10 @@ position:relative;
 }
 .skill-description{
 	list-style-type: none;
-	padding:10px;
+	padding-top:20px;
+}
+.skill-block ul{
+	padding-left:0px;
 }
 
 .skill-rating{

@@ -16,9 +16,9 @@ $(document).ready(function() {
 				var refElement = $(currLink.attr("href"));
 				var top = refElement.position().top;
 				var bottom = refElement.position().top + refElement.height();
-				console.log("top "+Math.round(top));
-				console.log("bottom "+Math.round(bottom));
-				console.log("scrollPos "+scrollPos);
+				//console.log("top "+Math.round(top));
+				//console.log("bottom "+Math.round(bottom));
+				//console.log("scrollPos "+scrollPos);
 				if (Math.round(top) <= Math.round(scrollPos)+1 && Math.round(bottom) > Math.round(scrollPos)) {
 					//console.log("Entered");
 				$('.myNavbar a').removeClass("active");
@@ -26,7 +26,7 @@ $(document).ready(function() {
 				//console.log(currLink);
         }
         else{
-            currLink.removeClass("active");
+            //currLink.removeClass("active");
         }
 			});
 		});
@@ -59,5 +59,29 @@ $(".nav a,a[href='#profile']").on('click', function(event) {
     }  
   });
   });
+  
+  var typing = ["hello"];
+  
+  typing.forEach(function(data){
+	  var i=0;
+		  var x = setInterval(function(){
+		  $("#cursor-animation").append(data.charAt(i));
+		  i++;
+		  if(i>data.length){
+			  clearInterval(x);
+			  var y = setInterval(function(){
+			  i--;
+		  $("#cursor-animation").html(data.substring(0,i));
+		  if(i<1){
+			  clearInterval(y);
+		  }
+		  },100);
+			  
+		  }
+		  },100);
+		  
+		  
+});
+  
   
 });
