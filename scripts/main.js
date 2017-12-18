@@ -60,11 +60,15 @@ $(".nav a,a[href='#profile']").on('click', function(event) {
   });
   });
   
-  var typing = ["hello"];
-  
-  typing.forEach(function(data){
+  var typing = ["I Love Developing","I love Designing","I Love coding"];
+  var typingIndex = 0;
+  showTyping(typing[typingIndex]);
+
+  function showTyping(data){
+
 	  var i=0;
 		  var x = setInterval(function(){
+
 		  $("#cursor-animation").append(data.charAt(i));
 		  i++;
 		  if(i>data.length){
@@ -74,14 +78,12 @@ $(".nav a,a[href='#profile']").on('click', function(event) {
 		  $("#cursor-animation").html(data.substring(0,i));
 		  if(i<1){
 			  clearInterval(y);
+			  typingIndex++;
+			  showTyping(typing[typingIndex%typing.length]);
 		  }
-		  },100);
+		  },50);
 			  
 		  }
-		  },100);
-		  
-		  
-});
-  
-  
+		  },200);
+  }
 });

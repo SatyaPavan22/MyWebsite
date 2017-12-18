@@ -196,3 +196,26 @@ text-align: center
 .name{
 	font-family: 'Catamaran', sans-serif;
 }
+
+#cursor-blink{
+	border:1px solid white;
+	font-size:25px;
+	  -webkit-animation: 1s blink step-end infinite;
+  -moz-animation: 1s blink step-end infinite;
+  -ms-animation: 1s blink step-end infinite;
+  -o-animation: 1s blink step-end infinite;
+  animation: 1s blink step-end infinite;
+
+}
+
+@keyframes blink{
+  0%,100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+}
+
+#cursor-animation{
+	display:inline;
+}
