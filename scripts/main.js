@@ -5,7 +5,7 @@ $(document).ready(function() {
 		$(window).scroll(function () {
 			var scrollPos = $(this).scrollTop();
             
-			if ( scrollPos > 730) {
+			if ( scrollPos > 660) {
 				$('.nav').fadeIn();
 			} else {
 				$('.nav').hide();
@@ -19,7 +19,7 @@ $(document).ready(function() {
 				//console.log("top "+Math.round(top));
 				//console.log("bottom "+Math.round(bottom));
 				//console.log("scrollPos "+scrollPos);
-				if (Math.round(top) <= Math.round(scrollPos)+1 && Math.round(bottom) > Math.round(scrollPos)) {
+				if (Math.round(top) <= Math.round(scrollPos) && Math.round(bottom) > Math.round(scrollPos)) {
 					//console.log("Entered");
 				$('.myNavbar a').removeClass("active");
 				currLink.addClass("active");
@@ -47,7 +47,7 @@ $(".nav a,a[href='#profile']").on('click', function(event) {
       });
     } 
   });
-  $(window).scroll(function() {
+ /* $(window).scroll(function() {
   $(".animate-up").each(function(){
 	    var pos = $(this).offset().top;
 
@@ -58,15 +58,15 @@ $(".nav a,a[href='#profile']").on('click', function(event) {
       $(this).addClass("slide");
     }  
   });
-  });
+  });*/
   
-  var typing = ["I Love Developing","I love Designing","I Love coding"];
+  var typing = ["Developing","Designing","coding"];
   var typingIndex = 0;
-  showTyping(typing[typingIndex]);
+  showTyping(typing[typingIndex]); 
+  	//$("#cursor-animation").append("I Love ")
 
   function showTyping(data){
-
-	  var i=0;
+  	  var i=0;
 		  var x = setInterval(function(){
 
 		  $("#cursor-animation").append(data.charAt(i));
@@ -75,15 +75,16 @@ $(".nav a,a[href='#profile']").on('click', function(event) {
 			  clearInterval(x);
 			  var y = setInterval(function(){
 			  i--;
-		  $("#cursor-animation").html(data.substring(0,i));
+			  $("#cursor-animation").html("");
+		  $("#cursor-animation").html("I Love "+data.substring(0,i));
 		  if(i<1){
 			  clearInterval(y);
 			  typingIndex++;
 			  showTyping(typing[typingIndex%typing.length]);
 		  }
-		  },50);
+		  },75);
 			  
 		  }
-		  },200);
+	  },300);
   }
 });

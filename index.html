@@ -2,13 +2,14 @@
 <head>
 <title>Satya Pavan</title>
 <link rel="stylesheet" href="styles/main.css">
+<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
 <script
   src="https://code.jquery.com/jquery-3.2.1.min.js"
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
   crossorigin="anonymous"></script>
   <script src="scripts/main.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Arimo|Barlow+Condensed|Catamaran:300|Lobster" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Arimo|Barlow+Condensed|Catamaran:300|Lobster|Roboto|Open+Sans" rel="stylesheet">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
 <body data-spy="scroll" data-target=".nav" data-offset="50">
@@ -19,32 +20,31 @@
 <h2 class="hey">Hi there, I'm</h2>
 <div class="after"></div>
 <h1 class="name">SATYA PAVAN</h1>
-<button class="draw">Draw</button>
-<h2 id="cursor-animation"></h2><span id="cursor-blink"></span>
+<h2 id="cursor-animation">I Love </h2><!--span id="cursor-blink"></span-->
+<a href="#profile" class="download-more">Know More</a>
+<a href="resume/SatyaPavanKumar.pdf" target="_blank" class="download-resume">Download Resume</a>
 <h2><a href="#profile"><span class="glyphicon glyphicon-chevron-down know-more"></a></h2>
 </div>
 </div>
 <div class="first-overlay"></div>
 </div>
-
-
 <ul class="nav  nav-stacked navbar-right nav-pills myNavbar">
 <li><a class="active" href="#profile">Profile</a></li>
 <li><a href="#Experiences">Experience</a></li>
 <li><a href="#Abilities">Abilities</a></li>
 <li><a href="#projects">Projects</a></li>
-<li><a href="#Contact">Contact</a></li>
+<li><a href="#contact">Contact</a></li>
 </ul>
 
-<div class="container animate-up">
-<div id="profile">
+<div class="container-fluid" id="profile">
+<!--div id="profile"-->
 <div class="row">	
 <div class="col-xs-2">
 </div>
 <div class="col-xs-8 profile-header">
-<h1>Profile</h1>
+<h1 class="profileHeading">Profile</h1>
+<h2 class="profileSubHeading">I am a creative web developer</h2>
 <hr>
-<h2>I am a creative web developer</h2>
 </div>
 <div class="col-xs-2">
 </div>
@@ -54,12 +54,10 @@
 </div>
 <div class="col-xs-3">
 <h2>About Me</h2>
-<p>I am an allround web developer. I am a senior programmer with good knowledge of 
-front-end techniques. I love structure and order and I also stand for quality. I love spending time on fixing 
-little details and optimizing web apps. Also I like working in a team, you'll learn faster and 
-much more. As the saying goes: 'two heads are better than one'.
+<p>I am a full stack developer with good knowledge of front-end and back-end techniques.I am passionate about new 
+technologies.I love spending time on developing and fixing minute details in web apps.I always strive to create larger imapact with my projects.I also love to work in a team as it gives an opportunity to learn faster.
 </p>
-</div>
+</div> 
 <div class="col-xs-2">
 <img class="profile-pic" src="images/profile.jpg">
 </div>
@@ -76,15 +74,17 @@ much more. As the saying goes: 'two heads are better than one'.
 </div>
 </div>
 </div>
-</div>
+<!--/div-->
 
-<div class="container animate-up">
-<div id="Experiences">
+<div class="container-fluid" id="Experiences">
+<!--div id="Experiences"-->
 <div class="row">
 <div class="col-xs-2">
 </div>
 <div class="col-xs-8 profile-header">
-<h1>Experience</h1>
+<h1 class="profileHeading">Experience</h1>
+<h3 class="profileSubHeading"><i>"The only source of knowledge is experience"</i></h3>
+<p class="profileSubHeading">- Albert Einstein</p>
 <hr>
 </div>
 <div class="col-xs-2">
@@ -106,23 +106,20 @@ much more. As the saying goes: 'two heads are better than one'.
 </div>
 <div class="col-xs-6">
 <h4>Bachelor - Computer Science and Engineering</h4>
-<p>hniques. I love structure and order and I also stand for quality. I love spending time on fixing 
-little details and optimizing web apps. Also I like working in a team, you'll learn faster and 
-much more. As </p>
+<p>During my bachelors i got an opportunity to explore a lot of different courses and to take a deep dive into the world of computer science.The teaching was primarily C++ based programing and the courses included Object oriented concepts,Database Management,Operating Systems,Computer Networks to name a few</p>
 </div>
 </div>
 <div class="row">
 <div class="col-xs-2">
 </div>
 <div class="col-xs-2">
-<h4>Sri Chait</h2>
-<p>2007-2010</p>
+<h4>Sri Chaitanya</h2>
+<p>2007-2009</p>
 </div>
 <div class="col-xs-6">
 <h4>High School</h4>
-<p>hniques. I love structure and order and I also stand for quality. I love spending time on fixing 
-little details and optimizing web apps. Also I like working in a team, you'll learn faster and 
-much more. As </p>
+<p>I graduated from high school where i  enjoyed maths and sciences.This is when i realised my inclination towards computers
+</p>
 </div>
 </div>
 <hr>
@@ -141,53 +138,25 @@ much more. As </p>
 <p>2014-2017</p>
 </div>
 <div class="col-xs-6">
-<h4>Bachelor - Computer Science and Engineering</h4>
-<p>hniques. I love structure and order and I also stand for quality. I love spending time on fixing 
-little details and optimizing web apps. Also I like working in a team, you'll learn faster and 
-much more. As </p>
+<h4>Full Time - Software Engineer</h4>
+<p>Right after college i stared working with Amadeus as a front end developer.During this time, i have contributed to 
+a community product which is used by hundreds of airlines and millions of people.My contribution was in terms of adding new
+product features and also maintaining the product.I was a part of scrum team and i am well versed with agile practices.</p>
 </div>
 </div>
 
-<div class="row">
-<div class="col-xs-2">
-</div>
-<div class="col-xs-2">
-<h4>Amadeus</h2>
-<p>2014-2017</p>
-</div>
-<div class="col-xs-6">
-<h4>Bachelor - Computer Science and Engineering</h4>
-<p>hniques. I love structure and order and I also stand for quality. I love spending time on fixing 
-little details and optimizing web apps. Also I like working in a team, you'll learn faster and 
-much more. As </p>
-</div>
+<!--/div-->
 </div>
 
-<div class="row">
-<div class="col-xs-2">
-</div>
-<div class="col-xs-2">
-<h4>Amadeus</h2>
-<p>2014-2017</p>
-</div>
-<div class="col-xs-6">
-<h4>Bachelor - Computer Science and Engineering</h4>
-<p>hniques. I love structure and order and I also stand for quality. I love spending time on fixing 
-little details and optimizing web apps. Also I like working in a team, you'll learn faster and 
-much more. As </p>
-</div>
-</div>
-
-</div>
-</div>
-
-<div class="container animate-up">
-<div id="Abilities">
+<div class="container-fluid" id="Abilities">
+<!--div id="Abilities"-->
 <div class="row">
 <div class="col-xs-2">
 </div>
 <div class="col-xs-8 profile-header">
-<h1>Abilities</h1>
+<h1 class="profileHeading">Abilities</h1>
+<h3 class="profileSubHeading"><i>"If you never try,you never know what you are capable of"</i></h3>
+<p class="profileSubHeading">- John Barrow</p>
 <hr>
 </div>
 </div>
@@ -203,7 +172,24 @@ much more. As </p>
 </div>
 <div class="col-xs-4 skill-block">
 <ul>
-<li class="skill-description">Bootstrap Framework 
+
+<li class="skill-description">HTML 
+<span class="skill-rating animated pulse">
+<span class="glyphicon glyphicon-star"></span>
+<span class="glyphicon glyphicon-star"></span>
+<span class="glyphicon glyphicon-star"></span>
+<span class="glyphicon glyphicon-star"></span>
+<span class="glyphicon glyphicon-star"></span></span></li>
+
+<li class="skill-description">JavaScript 
+<span class="skill-rating">
+<span class="glyphicon glyphicon-star"></span>
+<span class="glyphicon glyphicon-star"></span>
+<span class="glyphicon glyphicon-star"></span>
+<span class="glyphicon glyphicon-star"></span>
+<span class="glyphicon glyphicon-star"></span></span></li>
+
+<li class="skill-description">CSS 
 <span class="skill-rating">
 <span class="glyphicon glyphicon-star"></span>
 <span class="glyphicon glyphicon-star"></span>
@@ -219,7 +205,7 @@ much more. As </p>
 <span class="glyphicon glyphicon-star"></span>
 <span class="glyphicon glyphicon-star"></span></span></li>
 
-<li class="skill-description">Bootstrap Framework 
+<li class="skill-description">JAVA 
 <span class="skill-rating">
 <span class="glyphicon glyphicon-star"></span>
 <span class="glyphicon glyphicon-star"></span>
@@ -227,7 +213,7 @@ much more. As </p>
 <span class="glyphicon glyphicon-star"></span>
 <span class="glyphicon glyphicon-star"></span></span></li>
 
-<li class="skill-description">Bootstrap Framework 
+<li class="skill-description">C++ 
 <span class="skill-rating">
 <span class="glyphicon glyphicon-star"></span>
 <span class="glyphicon glyphicon-star"></span>
@@ -235,23 +221,7 @@ much more. As </p>
 <span class="glyphicon glyphicon-star"></span>
 <span class="glyphicon glyphicon-star"></span></span></li>
 
-<li class="skill-description">Bootstrap Framework 
-<span class="skill-rating">
-<span class="glyphicon glyphicon-star"></span>
-<span class="glyphicon glyphicon-star"></span>
-<span class="glyphicon glyphicon-star"></span>
-<span class="glyphicon glyphicon-star"></span>
-<span class="glyphicon glyphicon-star"></span></span></li>
-
-<li class="skill-description">Bootstrap Framework 
-<span class="skill-rating">
-<span class="glyphicon glyphicon-star"></span>
-<span class="glyphicon glyphicon-star"></span>
-<span class="glyphicon glyphicon-star"></span>
-<span class="glyphicon glyphicon-star"></span>
-<span class="glyphicon glyphicon-star"></span></span></li>
-
-<li class="skill-description">Bootstrap Framework 
+<li class="skill-description">NodeJs
 <span class="skill-rating">
 <span class="glyphicon glyphicon-star"></span>
 <span class="glyphicon glyphicon-star"></span>
@@ -259,7 +229,7 @@ much more. As </p>
 <span class="glyphicon glyphicon-star"></span>
 <span class="glyphicon glyphicon-star-empty"></span></span></li>
 
-<li class="skill-description">Bootstrap Framework 
+<li class="skill-description">Mongoose 
 <span class="skill-rating">
 <span class="glyphicon glyphicon-star"></span>
 <span class="glyphicon glyphicon-star"></span>
@@ -270,55 +240,7 @@ much more. As </p>
 </div>
 <div class="col-xs-4 skill-block">
 <ul>
-<li class="skill-description">Bootstrap Framework 
-<span class="skill-rating">
-<span class="glyphicon glyphicon-star"></span>
-<span class="glyphicon glyphicon-star"></span>
-<span class="glyphicon glyphicon-star"></span>
-<span class="glyphicon glyphicon-star"></span>
-<span class="glyphicon glyphicon-star"></span></span></li>
-
-<li class="skill-description">Bootstrap Framework 
-<span class="skill-rating">
-<span class="glyphicon glyphicon-star"></span>
-<span class="glyphicon glyphicon-star"></span>
-<span class="glyphicon glyphicon-star"></span>
-<span class="glyphicon glyphicon-star"></span>
-<span class="glyphicon glyphicon-star"></span></span></li>
-
-<li class="skill-description">Bootstrap Framework 
-<span class="skill-rating">
-<span class="glyphicon glyphicon-star"></span>
-<span class="glyphicon glyphicon-star"></span>
-<span class="glyphicon glyphicon-star"></span>
-<span class="glyphicon glyphicon-star"></span>
-<span class="glyphicon glyphicon-star"></span></span></li>
-
-<li class="skill-description">Bootstrap Framework 
-<span class="skill-rating">
-<span class="glyphicon glyphicon-star"></span>
-<span class="glyphicon glyphicon-star"></span>
-<span class="glyphicon glyphicon-star"></span>
-<span class="glyphicon glyphicon-star"></span>
-<span class="glyphicon glyphicon-star"></span></span></li>
-
-<li class="skill-description">Bootstrap Framework 
-<span class="skill-rating">
-<span class="glyphicon glyphicon-star"></span>
-<span class="glyphicon glyphicon-star"></span>
-<span class="glyphicon glyphicon-star"></span>
-<span class="glyphicon glyphicon-star"></span>
-<span class="glyphicon glyphicon-star"></span></span></li>
-
-<li class="skill-description">Bootstrap Framework 
-<span class="skill-rating">
-<span class="glyphicon glyphicon-star"></span>
-<span class="glyphicon glyphicon-star"></span>
-<span class="glyphicon glyphicon-star"></span>
-<span class="glyphicon glyphicon-star"></span>
-<span class="glyphicon glyphicon-star"></span></span></li>
-
-<li class="skill-description">Bootstrap Framework 
+<li class="skill-description">Express
 <span class="skill-rating">
 <span class="glyphicon glyphicon-star"></span>
 <span class="glyphicon glyphicon-star"></span>
@@ -326,17 +248,64 @@ much more. As </p>
 <span class="glyphicon glyphicon-star"></span>
 <span class="glyphicon glyphicon-star-empty"></span></span></li>
 
-<li class="skill-description">Bootstrap Framework 
+<li class="skill-description">JQuery 
 <span class="skill-rating">
 <span class="glyphicon glyphicon-star"></span>
 <span class="glyphicon glyphicon-star"></span>
 <span class="glyphicon glyphicon-star"></span>
 <span class="glyphicon glyphicon-star"></span>
+<span class="glyphicon glyphicon-star-empty"></span></span></li>
+
+<li class="skill-description">Git 
+<span class="skill-rating">
+<span class="glyphicon glyphicon-star"></span>
+<span class="glyphicon glyphicon-star"></span>
+<span class="glyphicon glyphicon-star"></span>
+<span class="glyphicon glyphicon-star"></span>
+<span class="glyphicon glyphicon-star-empty"></span></span></li>
+
+<li class="skill-description">XML 
+<span class="skill-rating">
+<span class="glyphicon glyphicon-star"></span>
+<span class="glyphicon glyphicon-star"></span>
+<span class="glyphicon glyphicon-star"></span>
+<span class="glyphicon glyphicon-star"></span>
+<span class="glyphicon glyphicon-star-empty"></span></span></li>
+
+<li class="skill-description">Json 
+<span class="skill-rating">
+<span class="glyphicon glyphicon-star"></span>
+<span class="glyphicon glyphicon-star"></span>
+<span class="glyphicon glyphicon-star"></span>
+<span class="glyphicon glyphicon-star"></span>
+<span class="glyphicon glyphicon-star-empty"></span></span></li>
+
+<li class="skill-description">SQL 
+<span class="skill-rating">
+<span class="glyphicon glyphicon-star"></span>
+<span class="glyphicon glyphicon-star"></span>
+<span class="glyphicon glyphicon-star"></span>
+<span class="glyphicon glyphicon-star"></span>
+<span class="glyphicon glyphicon-star-empty"></span></span></li>
+
+<li class="skill-description">Semantic UI 
+<span class="skill-rating">
+<span class="glyphicon glyphicon-star"></span>
+<span class="glyphicon glyphicon-star"></span>
+<span class="glyphicon glyphicon-star"></span>
+<span class="glyphicon glyphicon-star-empty"></span>
+<span class="glyphicon glyphicon-star-empty"></span></span></li>
+
+<li class="skill-description">Angular Framework 
+<span class="skill-rating">
+<span class="glyphicon glyphicon-star"></span>
+<span class="glyphicon glyphicon-star"></span>
+<span class="glyphicon glyphicon-star"></span>
+<span class="glyphicon glyphicon-star-empty"></span>
 <span class="glyphicon glyphicon-star-empty"></span></span></li>
 </ul>
 </div>
-<div class="col-xs-12">
-<hr>
+<div class="col-xs-8">
 </div>
 </div>
 <div class="row">
@@ -346,13 +315,12 @@ much more. As </p>
 <h2>Tools</h2>
 </div>
 </div>
-
 <div class="row">
 <div class="col-xs-2">
 </div>
 <div class="col-xs-4 skill-block">
 <ul>
-<li class="skill-description">Bootstrap Framework 
+<li class="skill-description">Atlassian / Jira 
 <span class="skill-rating">
 <span class="glyphicon glyphicon-star"></span>
 <span class="glyphicon glyphicon-star"></span>
@@ -360,7 +328,7 @@ much more. As </p>
 <span class="glyphicon glyphicon-star"></span>
 <span class="glyphicon glyphicon-star"></span></span></li>
 
-<li class="skill-description">Bootstrap Framework 
+<li class="skill-description">Notepad++ 
 <span class="skill-rating">
 <span class="glyphicon glyphicon-star"></span>
 <span class="glyphicon glyphicon-star"></span>
@@ -368,7 +336,7 @@ much more. As </p>
 <span class="glyphicon glyphicon-star"></span>
 <span class="glyphicon glyphicon-star"></span></span></li>
 
-<li class="skill-description">Bootstrap Framework 
+<li class="skill-description"> SublimeText
 <span class="skill-rating">
 <span class="glyphicon glyphicon-star"></span>
 <span class="glyphicon glyphicon-star"></span>
@@ -376,50 +344,25 @@ much more. As </p>
 <span class="glyphicon glyphicon-star"></span>
 <span class="glyphicon glyphicon-star"></span></span></li>
 
-<li class="skill-description">Bootstrap Framework 
+<li class="skill-description">Eclipse 
 <span class="skill-rating">
 <span class="glyphicon glyphicon-star"></span>
 <span class="glyphicon glyphicon-star"></span>
 <span class="glyphicon glyphicon-star"></span>
 <span class="glyphicon glyphicon-star"></span>
 <span class="glyphicon glyphicon-star"></span></span></li>
-
-<li class="skill-description">Bootstrap Framework 
+<li class="skill-description">Mongo Lab 
 <span class="skill-rating">
 <span class="glyphicon glyphicon-star"></span>
 <span class="glyphicon glyphicon-star"></span>
 <span class="glyphicon glyphicon-star"></span>
 <span class="glyphicon glyphicon-star"></span>
 <span class="glyphicon glyphicon-star"></span></span></li>
-
-<li class="skill-description">Bootstrap Framework 
-<span class="skill-rating">
-<span class="glyphicon glyphicon-star"></span>
-<span class="glyphicon glyphicon-star"></span>
-<span class="glyphicon glyphicon-star"></span>
-<span class="glyphicon glyphicon-star"></span>
-<span class="glyphicon glyphicon-star"></span></span></li>
-
-<li class="skill-description">Bootstrap Framework 
-<span class="skill-rating">
-<span class="glyphicon glyphicon-star"></span>
-<span class="glyphicon glyphicon-star"></span>
-<span class="glyphicon glyphicon-star"></span>
-<span class="glyphicon glyphicon-star"></span>
-<span class="glyphicon glyphicon-star-empty"></span></span></li>
-
-<li class="skill-description">Bootstrap Framework 
-<span class="skill-rating">
-<span class="glyphicon glyphicon-star"></span>
-<span class="glyphicon glyphicon-star"></span>
-<span class="glyphicon glyphicon-star"></span>
-<span class="glyphicon glyphicon-star"></span>
-<span class="glyphicon glyphicon-star-empty"></span></span></li>
 </ul>
 </div>
 <div class="col-xs-4 skill-block">
 <ul>
-<li class="skill-description">Bootstrap Framework 
+<li class="skill-description">Chrome Dev Tools 
 <span class="skill-rating">
 <span class="glyphicon glyphicon-star"></span>
 <span class="glyphicon glyphicon-star"></span>
@@ -427,47 +370,7 @@ much more. As </p>
 <span class="glyphicon glyphicon-star"></span>
 <span class="glyphicon glyphicon-star"></span></span></li>
 
-<li class="skill-description">Bootstrap Framework 
-<span class="skill-rating">
-<span class="glyphicon glyphicon-star"></span>
-<span class="glyphicon glyphicon-star"></span>
-<span class="glyphicon glyphicon-star"></span>
-<span class="glyphicon glyphicon-star"></span>
-<span class="glyphicon glyphicon-star"></span></span></li>
-
-<li class="skill-description">Bootstrap Framework 
-<span class="skill-rating">
-<span class="glyphicon glyphicon-star"></span>
-<span class="glyphicon glyphicon-star"></span>
-<span class="glyphicon glyphicon-star"></span>
-<span class="glyphicon glyphicon-star"></span>
-<span class="glyphicon glyphicon-star"></span></span></li>
-
-<li class="skill-description">Bootstrap Framework 
-<span class="skill-rating">
-<span class="glyphicon glyphicon-star"></span>
-<span class="glyphicon glyphicon-star"></span>
-<span class="glyphicon glyphicon-star"></span>
-<span class="glyphicon glyphicon-star"></span>
-<span class="glyphicon glyphicon-star"></span></span></li>
-
-<li class="skill-description">Bootstrap Framework 
-<span class="skill-rating">
-<span class="glyphicon glyphicon-star"></span>
-<span class="glyphicon glyphicon-star"></span>
-<span class="glyphicon glyphicon-star"></span>
-<span class="glyphicon glyphicon-star"></span>
-<span class="glyphicon glyphicon-star"></span></span></li>
-
-<li class="skill-description">Bootstrap Framework 
-<span class="skill-rating">
-<span class="glyphicon glyphicon-star"></span>
-<span class="glyphicon glyphicon-star"></span>
-<span class="glyphicon glyphicon-star"></span>
-<span class="glyphicon glyphicon-star"></span>
-<span class="glyphicon glyphicon-star"></span></span></li>
-
-<li class="skill-description">Bootstrap Framework 
+<li class="skill-description">XAMPP 
 <span class="skill-rating">
 <span class="glyphicon glyphicon-star"></span>
 <span class="glyphicon glyphicon-star"></span>
@@ -475,26 +378,42 @@ much more. As </p>
 <span class="glyphicon glyphicon-star"></span>
 <span class="glyphicon glyphicon-star-empty"></span></span></li>
 
-<li class="skill-description">Bootstrap Framework 
+<li class="skill-description">Github 
 <span class="skill-rating">
 <span class="glyphicon glyphicon-star"></span>
 <span class="glyphicon glyphicon-star"></span>
 <span class="glyphicon glyphicon-star"></span>
 <span class="glyphicon glyphicon-star"></span>
 <span class="glyphicon glyphicon-star-empty"></span></span></li>
+<li class="skill-description">Windows 
+<span class="skill-rating">
+<span class="glyphicon glyphicon-star"></span>
+<span class="glyphicon glyphicon-star"></span>
+<span class="glyphicon glyphicon-star"></span>
+<span class="glyphicon glyphicon-star"></span>
+<span class="glyphicon glyphicon-star"></span></span></li>
+<li class="skill-description">Heroku 
+<span class="skill-rating">
+<span class="glyphicon glyphicon-star"></span>
+<span class="glyphicon glyphicon-star"></span>
+<span class="glyphicon glyphicon-star"></span>
+<span class="glyphicon glyphicon-star"></span>
+<span class="glyphicon glyphicon-star"></span></span></li>
 </ul>
 </div>
 </div>
 
+<!--/div-->
 </div>
-</div>
-<div class="container animate-up">
-<div id="projects">
+<div class="container-fluid" id="projects">
+<!--div id="projects"-->
 <div class="row">
 <div class="col-xs-2">
 </div>
 <div class="col-xs-8 profile-header">
-<h1>Projects</h1>
+<h1 class="profileHeading">Projects</h1>
+<h3 class="profileSubHeading"><i>"I hear and I forget,I see and I remember,I do and I understand"</i></h3>
+<p class="profileSubHeading">- Confucius</p>
 <hr>
 </div>
 </div>
@@ -502,17 +421,20 @@ much more. As </p>
 <div class="col-xs-2">
 </div>
 <div class="col-xs-4 myproject">
-<div class="share"><h3 class="glyphicon glyphicon-share"></h3></div>
+<div class="share"><a><h3 class="glyphicon glyphicon-share"></a></h3></div>
 <img src="images/homePage.png">
  <div class="overlay">
-    <div class="text">Hello World</div>
+    <div class="text"><h3>Quora</h3>
+    <a href="https://github.com/SatyaPavan22/Quora" target="_blank">A web app with similar functionalities like in Quora</a></div>
   </div>
 </div>
 <div class="col-xs-4 myproject">
 <div class="share"><h3 class="glyphicon glyphicon-share"></h3></div>
 <img src="images/homePage.png">
  <div class="overlay">
-    <div class="text">Hello World</div>
+    <div class="text">
+    <h3>Yelp Camp</h3>
+    <a href="https://github.com/SatyaPavan22/Camp" target="_blank">An e-commerce application where users can add delete and modify camps</a></div>
   </div>
 </div>
 </div>
@@ -524,27 +446,30 @@ much more. As </p>
 <div class="share"><h3 class="glyphicon glyphicon-share"></h3></div>
 <img src="images/homePage.png">
  <div class="overlay">
-    <div class="text">Hello World</div>
+    <div class="text"><h3>Bidding</h3>
+    <a href="https://github.com/SatyaPavan22/Bidding" target="_blank">A Bidding application where users can bid for items in real time</a></div>
   </div>
 </div>
 <div class="col-xs-4 myproject">
 <div class="share"><h3 class="glyphicon glyphicon-share"></h3></div>
 <img src="images/homePage.png">
  <div class="overlay">
-    <div class="text">Hello World</div>
+    <div class="text"><h3>Blog</h3>
+    <a href="https://github.com/SatyaPavan22/Blog" target="_blank">A web app where users can post, add edit and update a blog</a></div>
   </div>
 </div>
 </div>
+<!--/div-->
 </div>
-</div>
-
-<div class="container animate-up">
-<div id="Contact">
+<div class="container-fluid" id="contact">
+<!--div id="Contact"-->
 <div class="row">
 <div class="col-xs-2">
 </div>
 <div class="col-xs-8 profile-header">
-<h1>Contact</h1>
+<h1 class="contactHeading">Contact</h1>
+<h3 class="contactSubHeading"><i>"If you are not networking,you are not working"</i></h3>
+<p class="contactSubHeading">- Dennis Waitley</p>
 <hr>
 </div>
 </div>
@@ -574,7 +499,7 @@ much more. As </p>
 </div>
 </div>
 </div>
-</div>
+<!--/div-->
 </div>
 </body>
 </html>
