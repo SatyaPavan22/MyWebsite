@@ -184,6 +184,25 @@ position:relative;
   letter-spacing: 2px;
 }
 
+.contactIcon{
+  color:white;
+  font-size:40px !important;
+  opacity: 0.7;
+  text-align: center;
+  padding:5%;
+  margin-left:15%;
+}
+.contactInfo{
+   font-family:'Open Sans', sans-serif;
+  color:white;
+  opacity:0.7;
+  font-size: 15px;
+}
+.contactInfo:hover,.contactInfo:focus,.contactInfo:visited{
+  text-decoration: none;
+  color:white;
+  opacity: 1;
+}
 @keyframes MoveUpDown{
   0% {
     margin-top: 25%;
