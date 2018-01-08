@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	//$(".nav").hide();
+	$(".nav").hide();
 	
 		$(function () {
 		$(window).scroll(function () {
@@ -60,7 +60,7 @@ $(".nav a,a[href='#profile']").on('click', function(event) {
   });
   });*/
   
-  var typing = ["Developing","Designing","coding"];
+  var typing = ["Programming","Debugging","Designing"];
   var typingIndex = 0;
   showTyping(typing[typingIndex]); 
   	//$("#cursor-animation").append("I Love ")
