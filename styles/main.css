@@ -27,19 +27,20 @@ color:white;
 margin-top:50%;
 animation:MoveUpDown 1s linear infinite;
 position:relative;
+
 }
 
 .download-more,.download-more:visited,.download-more:focus{
   text-decoration: none;
   position: relative;
   width: 32%;
-  height: 5%;
   text-align: center;
   display: inline-block;
   color: white;
   margin:5%;
   vertical-align: top;
-  padding:4px;
+  padding:2%;
+  font-family: 'Jura', sans-serif;
 }
 
 .download-more:hover {
@@ -51,18 +52,19 @@ position:relative;
   text-decoration: none;
   color:white;
   background: #37b2ff;
+  font-family: 'Jura' ,sans-serif;
 }
 .download-resume{
   text-decoration: none;
   position: relative;
   width: 32%;
-  height: 5%;
   text-align: center;
   display: inline-block;
   color: white;
   margin:5%;
   vertical-align: top;
-  padding:4px;
+  padding:2%;
+  font-family: 'Jura', sans-serif;
 }
 
 .download-more::before{
@@ -289,7 +291,7 @@ background:#f2f2f2;
   left: 100%;
   right: 0;
   background-color:#37b2ff;
-  opacity:0.5;
+  opacity:0.7;
   overflow: hidden;
   width: 0;
   height: 100%;
@@ -299,6 +301,12 @@ background:#f2f2f2;
 .myproject:hover .overlay {
   width: 100%;
   left:0;
+}
+
+#cursor-animation{
+  height:1em;
+  font-weight: 200;
+  font-family: 'Jura', sans-serif;
 }
 
 .text { 
@@ -390,7 +398,7 @@ text-align: center
 
 .hey{
 	display:inline-block;
-	font-family: 'Lobster', cursive;
+	font-family: 'Lobster Two', Helvetica, sans-serif;
 }
 .after{
   display: inline-block;
@@ -448,7 +456,5 @@ text-align: center
     opacity: 1;
 }
 
-#cursor-animation{
-  font-size: 30px;
-}*/
+
 

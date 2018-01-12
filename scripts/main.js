@@ -19,7 +19,7 @@ $(document).ready(function() {
 				//console.log("top "+Math.round(top));
 				//console.log("bottom "+Math.round(bottom));
 				//console.log("scrollPos "+scrollPos);
-				if (Math.round(top) <= Math.round(scrollPos) && Math.round(bottom) > Math.round(scrollPos)) {
+				if (Math.round(top) <= Math.round(scrollPos)+2 && Math.round(bottom) > Math.round(scrollPos)) {
 					//console.log("Entered");
 				$('.myNavbar a').removeClass("active");
 				currLink.addClass("active");
@@ -60,7 +60,7 @@ $(".nav a,a[href='#profile']").on('click', function(event) {
   });
   });*/
   
-  var typing = ["Programming","Debugging","Designing"];
+  var typing = ["Web Developer","Tech Enthusiast","Innovative"];
   var typingIndex = 0;
   showTyping(typing[typingIndex]); 
   	//$("#cursor-animation").append("I Love ")
@@ -76,7 +76,7 @@ $(".nav a,a[href='#profile']").on('click', function(event) {
 			  var y = setInterval(function(){
 			  i--;
 			  $("#cursor-animation").html("");
-		  $("#cursor-animation").html("I Love "+data.substring(0,i));
+		  $("#cursor-animation").html(data.substring(0,i));
 		  if(i<1){
 			  clearInterval(y);
 			  typingIndex++;
@@ -85,6 +85,6 @@ $(".nav a,a[href='#profile']").on('click', function(event) {
 		  },75);
 			  
 		  }
-	  },300);
+	  },200);
   }
 });
